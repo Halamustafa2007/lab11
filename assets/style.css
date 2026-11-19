@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202b35;
+    background: linear-gradient(135deg, #edf7f6, #e8eef8);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 42px;
+    border: 1px solid #e4ebee;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 18px 55px rgba(35, 63, 75, 0.10);
+}
+
+.brand-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    color: #ffffff;
+    background: #168b83;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.eyebrow {
+    margin: 0 0 9px;
+    color: #168b83;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: -0.8px;
+}
+
+.subtitle {
+    margin: 12px 0 27px;
+    color: #71808b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+label {
+    display: block;
+    margin: 17px 0 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid #dce5e8;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus {
+    border-color: #168b83;
+    box-shadow: 0 0 0 3px rgba(22, 139, 131, 0.10);
+}
+
+button, .button-link {
+    width: 100%;
+    display: block;
+    margin-top: 25px;
+    padding: 14px;
+    border: 0;
+    border-radius: 10px;
+    color: #ffffff;
+    background: #168b83;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover, .button-link:hover {
+    background: #11756f;
+}
+
+.hint {
+    margin: 22px 0 0;
+    color: #84919a;
+    text-align: center;
+    font-size: 12px;
+}
+
+.hint strong {
+    color: #52616b;
+}
+
+.alert {
+    padding: 12px 14px;
+    border-radius: 9px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.error {
+    color: #a33b3b;
+    background: #fff0f0;
+    border: 1px solid #f6d6d6;
+}
+
+.success {
+    color: #24734f;
+    background: #edfaf2;
+    border: 1px solid #d1efdc;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px;
+    border-radius: 10px;
+    color: #367153;
+    background: #eff9f2;
+    font-size: 13px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #38a66a;
+}
+
+.dashboard .button-link {
+    margin-top: 22px;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 30px 24px;
+    }
+}
